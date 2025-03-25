@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-import "./Busdetails.css";
+import './Busdetails.css';
 import { ShowLoading, HideLoading } from "../../redux/alertsSlice";
 import SeatSelection from "../../Components/SeatSelection/SeatSelection";
 import { assets } from "../../assets/assets";

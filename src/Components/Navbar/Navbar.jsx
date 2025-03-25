@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import "./Navbar.css";
+import './Navbar.css';
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { assets } from "../../assets/assets";
