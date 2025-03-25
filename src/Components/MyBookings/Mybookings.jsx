@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
 import moment from 'moment';
-import './MyBookings.css'
+import "./Mybookings.css"
 import { assets } from '../../assets/assets';
 
 const MyBookings = () => {
