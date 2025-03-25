@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-reoute-dom';
 import { useSelector } from 'react-redux';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
@@ -8,6 +9,8 @@ import "./Mybookings.css"
 import { assets } from '../../assets/assets';
 
 const MyBookings = () => {
+  const navigate = useNavigate();
+
   const navigate = useNavigate();
 
   const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
