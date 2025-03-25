@@ -5,6 +5,20 @@
     height: 70px;
     justify-content: center;
 }
+.navbar-logo{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px ;
+    
+}
+.navbar-logo img{
+    width: 100px;
+    border: 2px solid #fd471a;
+    padding: 1px;
+    border-radius: 7px;
+}
 .inner-navbar{
     width: 1200px;
     height: 60px;

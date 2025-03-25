@@ -28,6 +28,7 @@ import googlelogo from './google-logo.png'
 import busjourney from './bus-journey.gif'
 import profile from './profile.png'
 import pen from './pen.png'
+import SiteLogo from './SiteLogo.png'
 
 
 
@@ -63,4 +64,5 @@ export const assets =  {
     pen,
     busjourney,
     profile,
+    SiteLogo,
 }

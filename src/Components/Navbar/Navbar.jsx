@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="inner-navbar">
-        <div className="navbar-logo"> logo</div>
+        <div className="navbar-logo"><img src={assets.SiteLogo} alt="" /></div>
         <div className="navbar-links">
           <Link to ="/" onClick={()=>setMenu("home")} className={`navbar-link ${menu==="home"?"active":""}`}>Home</Link>
           <Link to="/#" onClick={()=>setMenu("menu")} className={`navbar-link ${menu==="menu"?"active":""}`}>About</Link>
