@@ -1,12 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import moment from 'moment';
 import "./Mybookings.css"
 import { assets } from '../../assets/assets';
 
 const MyBookings = () => {
+  const navigate = useNavigate();
 
   const isLoggedIn = useSelector((state) => state.users.isLoggedIn);
   const { user } = useSelector(state => state.users);
@@ -29,7 +31,7 @@ const MyBookings = () => {
   const trackBus = (busnumber, source, destination) => {
         const start = `${source[1]},${source[0]}`;
         const end = `${destination[1]},${destination[0]}`;
-        window.open(`/map/${busnumber}/${start}/${end}`, '_blank');
+        navigate(`/map/${busnumber}/${start}/${end}`);
   }
 
   useEffect(() => {
