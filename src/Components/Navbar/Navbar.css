@@ -1,0 +1,94 @@
+.navbar{
+    font-family: "Rubik", serif;
+    display: flex;
+    padding: 5px 2px;
+    height: 70px;
+    justify-content: center;
+}
+.inner-navbar{
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-logo{
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.navbar-links{
+    border-radius: 50px;
+    padding: 7px;
+    background-color: rgb(215, 215, 215);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+}
+.active{
+    scroll-behavior: smooth;
+    transition: ease-out;
+    transition-duration: .5s;
+    height: 100%;
+    display: flex;
+    color: #fefefe;
+    align-items: center;
+    justify-content: center;
+    background-color: #fd471a;
+    border-radius: 50px;
+    
+}
+a {
+    color: black
+}
+.navbar-link{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+.navbar-login{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    
+}
+.login-outer{
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 25px;
+    padding: 6px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-login-button{
+    background-color: #fd471a;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.navbar-logout-button{
+    border: 1px solid rgb(117, 117, 117);
+    height: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 4px;
+}
+.navbar-logout-button img{
+    width: 40px;
+}
+.account-profile{
+    height: 50px;
+    display: flex;
+}

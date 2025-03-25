@@ -1,0 +1,20 @@
+.Map{
+    border: 1px solid black;
+    padding: 10px;
+}
+.Map-inner{
+  border: 1px solid blue;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px ;
+}
+.Map-inner-heading{
+    border-bottom: 1px solid gray;
+}
+.map-details{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px 15px;
+}

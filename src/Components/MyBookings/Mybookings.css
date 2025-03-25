@@ -1,0 +1,108 @@
+.mybookings{
+    border: 2px solid black;
+    padding: 10px;
+    height: 100%;
+    font-family: "Rubik", serif;
+}
+.ticket-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.ticketstatus{
+   display: flex;
+   margin-top: 5px;
+   gap: 10px;
+}
+.ticketstatus-popup{
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 6px;
+    font-weight: 400;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.ticketstatus button{
+    font-size: 13px;
+    padding: 0px 6px;
+    padding-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    background-color: rgb(233, 58, 0);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.my-bookings-inner{
+    border-radius: 15px;
+    margin-top: 10px;
+    overflow-y: scroll;
+    height: calc(100% - 75px);
+    padding: 5px;
+}
+.my-bookings-inner::-webkit-scrollbar{
+    display: none;
+}
+.ticket-boottom{
+    margin-top: 5px;
+}
+.passenger-box{
+    margin-top: 5px;
+}
+.passenger-detail{
+    font-size: 12px;
+    font-weight: 400;
+}
+.single-ticket{
+    background-color: rgb(215, 215, 215);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.single-ticket:hover{
+    box-shadow: 0px 0px 5px 1px #060606b1;
+    transition-duration: .5s;
+}
+.single-ticket-detail{
+    display: flex;
+    font-size: 15px;
+    color: rgb(54, 54, 54);
+    margin: 5px 0px;
+}
+.single-ticket-detail p{
+    color: black;
+}
+
+.booking-heading{
+    border: 1px solid rgb(171, 171, 171);
+    box-shadow: 0px 0px 5px 1px #060606b1;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(179, 42, 88);
+}
+.single-ticket-top{
+    display: flex;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px dashed gray;
+}
+.ticket-arrow img{
+    width: 25px;
+}
