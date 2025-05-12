@@ -26,6 +26,7 @@
 }
 .member-box{
     border: 1px solid rgb(150, 150, 150);
+
     border-radius: 5px;
     box-shadow: 0px 0px 5px 1px #808080ad;
     padding: 10px;
@@ -56,6 +57,7 @@
 }
 .member-input-sections{
     display: flex;
+    padding: 0px 5px;
     gap: 10px;
     margin-bottom: 10px;
 }
@@ -66,9 +68,19 @@
 }
 .member-input-sections-inputs input{
     width: 100%;
+    margin-top: 2px;
     border: 1px solid gray;
-    padding: 1px 10px;
+    padding: 5px 10px;
     border-radius: 4px;
+}
+.gender-selecter{
+    border: 1px solid rgb(190, 184, 184);
+    padding: 4px 10px;
+    width: 49%;
+    border-radius: 5px;
+}
+.gender-selecter:focus{
+   outline: none;
 }
 .addmember-button{
     display: flex;
@@ -79,11 +91,13 @@
 .addmember-button-save{
     border: 1px solid green;
     display: flex;
+    padding:  5px 20px;
     justify-content: center;
     align-items: center;
     background-color: green;
-    color: rgb(0, 0, 0);
+    color: rgb(252, 252, 252);
     border-radius: 5px;
+    cursor: pointer;
     width: 30%;
 }
 .addmember-button-cancle{
@@ -91,6 +105,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(230, 11, 11);
+    cursor: pointer;
     color: white;
     border-radius: 5px;
     width: 30%;
@@ -116,6 +131,7 @@
     border: none;
     width: 30%;
     background-color: green;
+    padding: 5px 10px;
     border-radius: 5px;
     color: white;
     font-weight: 400;
@@ -127,6 +143,7 @@
 .member-delete-button{
     width: 30%;
     background-color: rgb(255, 0, 0);
+    padding: 5px 10px;
     border-radius: 5px;
     color: white;
     font-weight: 500;

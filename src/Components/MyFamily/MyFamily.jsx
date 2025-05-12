@@ -49,6 +49,7 @@ const Myfamily = () => {
 
       `https://backend-chi-one-67.vercel.app/api/user/${user.email}/delete/${memberId}`
     );
+    setDeletPopup(false);
     fetchMembers();
     dispatch(HideLoading());
 
@@ -64,6 +65,8 @@ const Myfamily = () => {
     dispatch(HideLoading());
     if(response.data.success){
       message.success("Member Updated Successfully");
+      fetchMembers();
+      setEditPopup(false)
     }else{
       message.error("Failed to Update Member");
     }
@@ -87,6 +90,9 @@ const Myfamily = () => {
       dispatch(HideLoading());
       if (response.data.success) {
         message.success(response.data.message);
+        fetchMembers();
+        setShowForm(false);
+        setMembers(response.data.Myfamily)
       } else {
         message.error(response.data.message);
       }
@@ -113,8 +119,8 @@ const Myfamily = () => {
     <div className="myfamily">
       <div className="myfamily-heading">Members Details</div>
       <div className="myfamily-main">
-        {Array.isArray(user.FamilyData) && user.FamilyData.length > 0 ? (
-          members.map((member, index) => (
+        {Array.isArray(user?.FamilyData) && user.FamilyData.length > 0 ? (
+          members?.map((member, index) => (
             <div key={index} className="member-box">
               <div className="member-box-main">
                 <div className="member-inner-box">
@@ -208,11 +214,11 @@ const Myfamily = () => {
                 />
               </div>
               <div className="member-input-sections-inputs">
-                <label htmlFor="">Adhar Number :</label>
+                <label htmlFor="">Adhaar Number :</label>
                 <br />
                 <input
                   type="text"
-                  placeholder="Adhar Number"
+                  placeholder="Adhaar Number"
                   value={adhar}
                   onChange={(e) => setAdhar(e.target.value)}
                   className="input"
@@ -223,7 +229,7 @@ const Myfamily = () => {
               <div className="member-input-sections-inputs">
                 <label htmlFor="">Gender :</label>
                 <br />
-                <select onChange={(e) => setGender(e.target.value)}>
+                <select className="gender-selecter" onChange={(e) => setGender(e.target.value)}>
                   <option value="">Select Gender</option>
                   <option value="male">Male</option>
                   <option value="female">Female</option>

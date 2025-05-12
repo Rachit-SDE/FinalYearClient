@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import { assets } from '../../assets/assets'
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
     <div className="footersection-main">
       <div className="footer" id="footer">
         <div className="footer-content-left">
-          
+          {/* <img className = "footer_logo" src={assets.SiteLogo} alt="" /> */}
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
             dolorum dicta officiis, quos ea similique, dolore tempore autem
@@ -40,7 +41,7 @@ const Footer = () => {
       <hr />
       <div className="footer-copyright">
         <p className="footer-copyright-p">
-          copyright 2024 Snapkart.com - All Right Reserved
+          copyright 2024 BusAdda.com - All Right Reserved
         </p>
       </div>
     </div>

@@ -50,6 +50,8 @@
 }
 .sidebar-option.active{
     background-color: #ffd8d8e5;
+    display: flex ;
+    justify-content: start;
     border: 3px solid rgb(255, 4, 4);
     border-right: none;
     border-radius: 10px 0px 0px 10px;

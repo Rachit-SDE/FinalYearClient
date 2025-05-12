@@ -2,6 +2,7 @@
     position: relative;
     font-family: "Rubik", serif;
     padding: 10px;
+    border-top: 1px solid gray;
     
 }
 .mydetails-inner, .eddit-popup-main{

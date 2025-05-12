@@ -7,7 +7,7 @@ import { message } from 'antd'
 import { HideLoading, ShowLoading } from '../../redux/alertsSlice'
 import { assets } from '../../assets/assets'
 import { useNavigate} from 'react-router-dom'
-import { logout } from '../../redux/userSlice'
+import { logout, setUser } from '../../redux/userSlice'
 
 const Mydetails = () => {
   useEffect(() => {
@@ -29,10 +29,11 @@ const Mydetails = () => {
 
   const updateuser = async () => {
     const updateduser = { firstname, lastname, email, phone, gender, adharcard,};
-    dispatch(ShowLoading());
-    await axios.put(`https://backend-chi-one-67.vercel.app/api/user/update/${userId}`, updateduser);
+    dispatch(ShowLoading(true));
+    const response = await axios.put(`https://backend-chi-one-67.vercel.app/api/user/update/${userId}`, updateduser);
+    dispatch(setUser(response.data.updatedUser));
     fetchuser();
-    dispatch(HideLoading());  
+    dispatch(HideLoading(false));  
     message.success("user Updated Successfully") 
   };
 
@@ -43,9 +44,7 @@ const Mydetails = () => {
     navigate('/')
     dispatch(logout())
     dispatch(HideLoading());
-    message.success("user Deleted Successfully")
-    
-      
+    message.success("user Deleted Successfully")   
   };
 
   const fetchuser = async () => {
@@ -60,6 +59,12 @@ const Mydetails = () => {
   }
 
   const {user} = useSelector(state => state.users)
+
+  console.log(user);
+
+  useEffect(() => {
+    fetchuser()
+  },[user]);
 
   return (
     <div className='mydetails'>
@@ -108,7 +113,7 @@ const Mydetails = () => {
                                 
                             }}  
            >Edit Account</button>
-          <button className='mydetails-delet-button' onClick = {() => setDeletPopup(true)}>Detel Account</button>
+          <button className='mydetails-delet-button' onClick = {() => setDeletPopup(true)}>Delete Account</button>
         </div>
       </div>
 
