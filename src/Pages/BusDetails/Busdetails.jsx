@@ -218,11 +218,14 @@ const Busdetails = () => {
   };
 
   const onToken = async (token) => {
+    console.log(token);
     try {
       const response = await axios.post("https://backend-chi-one-67.vercel.app/api/Booking/payment", {
         token,
         amount: amount,
       });
+      console.log(token);
+      console.log(response);
       if (response.data.success) {
         console.log(response.data.transactionId);
         bookTicket(response.data.transactionId);

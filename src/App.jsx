@@ -14,6 +14,7 @@ import PublicRoute from './Authentication/PublicRoute'
 import Busdetails from './Pages/BusDetails/Busdetails'
 import Register from './Pages/Login-Signup/Signup/Register'
 import Login from './Pages/Login-Signup/Login/Login'
+import MyPaments from './Components/MyPaments/MyPaments';
 
 const App = () => {
   return (
@@ -27,8 +28,10 @@ const App = () => {
       <Route path = "/dashboard/profile" element = {<ProtectedRoute><Dashboard><Mydetails/></Dashboard></ProtectedRoute>} />
       <Route path = "/dashboard/myfamily" element = {<ProtectedRoute><Dashboard><Myfamily/></Dashboard></ProtectedRoute>} />
       <Route path = "/dashboard/mybookings" element = {<ProtectedRoute><Dashboard><MyBookings/></Dashboard></ProtectedRoute>} />
+      <Route path = "/dashboard/mypayments" element = {<ProtectedRoute><Dashboard><MyPaments/></Dashboard></ProtectedRoute>} />
       <Route path ="/allbuses" element = {<PublicRoute><Buslist/></PublicRoute>} />
       <Route path = "/book-now/:id" element = {<ProtectedRoute><Busdetails/></ProtectedRoute>} />
+      
       <Route path="/map/:busnumber/:source/:destination" element = {<Map/>} />
     </Routes>
     </>

@@ -1,0 +1,59 @@
+.payment{
+    border-top: 1px solid rgb(101, 101, 101);
+    padding: 10px;
+}
+.innerPayment{
+    border: 1px solid rgb(217, 216, 216);
+    background-color: rgb(252, 252, 240);
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 6px;
+
+}
+.top{
+  
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.middle{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.username{
+    border: 2px solid rgb(202, 0, 0);
+    background-color: rgb(252, 214, 213);
+    color: rgb(202, 0, 0);
+    border-radius: 4px;
+    padding: 2px 5px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.heading{
+    margin-bottom: 2px;
+    color: rgb(43, 43, 43);
+}
+.heading strong{
+    color: rgb(69, 69, 69);
+}
+.status{
+    color: green;
+    font-weight: 500;
+}
+.status2{
+    color: rgb(217, 3, 3);
+    font-weight: 500;
+}
+.status3{
+    color: rgb(236, 150, 3);
+    font-weight: 500;
+}
