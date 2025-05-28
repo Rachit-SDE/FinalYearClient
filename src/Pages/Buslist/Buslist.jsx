@@ -1,3 +1,4 @@
+import React from 'react'
 import './Buslist.css';
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -152,7 +153,7 @@ const filteredBuses = Array.isArray(searchResults)
   
 
   return (
-    <div className="allbuses">
+    <div className="border border-black w-[100%] flex">
       <div className="allbuses-main">
         <div className="allbuses-filter">
           <div className="allbuses-filter-heading">Filter</div>

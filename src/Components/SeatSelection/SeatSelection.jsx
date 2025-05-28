@@ -1,3 +1,4 @@
+import React from 'react'
 import './SeatSelection.css'
 import { assets } from '../../assets/assets';
 

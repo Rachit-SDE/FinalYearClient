@@ -29,6 +29,10 @@ import busjourney from './bus-journey.gif'
 import profile from './profile.png'
 import pen from './pen.png'
 import SiteLogo from './SiteLogo.png'
+import footerSiteLogo from './footerSiteLogo.png'
+import telegram from './telegram.png'
+import instagram from './instagram.png'
+import whatsapp from './whatsapp.png'
 
 
 
@@ -65,4 +69,8 @@ export const assets =  {
     busjourney,
     profile,
     SiteLogo,
+    footerSiteLogo,
+    telegram,
+    instagram,
+    whatsapp,
 }

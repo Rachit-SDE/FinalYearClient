@@ -45,6 +45,12 @@
     align-items: center;
     gap: 20px;
 }
+.passenger-details-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .member-name{
     font-size: 20px;
     font-weight: 600;
@@ -72,9 +78,11 @@
 
 
 .booknow-left-passenger{
+    border: 1px solid gray;
+   border-radius: 3px;
     position: absolute;
     background-color: white;
-    top: 300px;
+    top: 340px;
     border-bottom: 1px solid gray;
     padding: 10px;
 }
@@ -95,15 +103,15 @@
     border: none;
     padding: 5px 12px;
     color: white;
-    background-color: green;
+    background-color: rgb(0, 170, 0);
     border-radius: 5px;
     cursor: pointer;
 }
-.passenger-cancle-button{
+.passenger-cancel-button{
     border: none;
     padding: 5px 12px;
-    color: white;
-    background-color: rgb(196, 1, 1);
+    color: rgb(201, 11, 11);
+    
     border-radius: 5px;
     cursor: pointer;
 }
@@ -226,4 +234,15 @@
     color: white;
     font-weight: 600;
     cursor: pointer;
+}
+.ticketBookingButton{
+    border-radius: 5px;
+    background-color: rgb(255, 153, 36);
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    
 }

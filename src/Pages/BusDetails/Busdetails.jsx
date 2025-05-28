@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
+import React from 'react'
 import { useState } from "react";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
@@ -238,9 +239,9 @@ const Busdetails = () => {
   };
 
   return (
-    <div className="conform-popup">
+    <div className="border border-black flex justify-center">
       {conformpopup ? (
-        <div className="conform-popup-inner">
+        <div className="border border-red-500">
           <h4>Confirm Booking?</h4>
           <div className="conform-book-buttons">
             <StripeCheckout
@@ -255,8 +256,8 @@ const Busdetails = () => {
         </div>
       ) : (
         <>
-          <div className="booknow">
-            <div className="booknow-main">
+          <div className="max-w-[1200px] bg-[#ebebeb] flex">
+            <div className="border border-black w-[600px]">
               <div className="booknow-left">
                 <div className="booknow-left-busdetails">
                   <p className="bus-name">{bus.busname}</p>
@@ -379,7 +380,7 @@ const Busdetails = () => {
                   </div>
                 ) : (
                   <>
-                    <button onClick={() => conformTicketPopup()}>Confirm Ticket</button>
+                    <button className='ticketBookingButton' onClick={() => conformTicketPopup()}>Confirm Ticket</button>
                   </>
                 )}
               </div>

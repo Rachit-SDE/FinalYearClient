@@ -1,6 +1,6 @@
 .seat-selection{
     padding: 20px;
-    width: 350px;
+    width: 320px;
 }
 
 .seats-container{
@@ -42,7 +42,7 @@
     width: 50%;
 }
 .seats-container-upper-left img{
-   width: 40px;
+   width: 30px;
 }
 .seats-container-upper-right{
     display: flex;
@@ -53,10 +53,11 @@
     width: 50%;
 }
 .seats-container-upper-right-steering img{
-    width: 40px;
+    margin-top: 10px;
+    width: 30px;
 }
 .seats-container-upper-right-driver img{
-    width: 40px;
+    width: 30px;
 }
 .seats-container-lower{
     
@@ -87,8 +88,8 @@
     width: 30px;
 }
 .seat{
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     background-image: url(../../assets/availableseat.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -105,15 +106,15 @@
 
 
 .selected-seat{
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     background-image: url(../../assets/selectseat.png);
     color: rgb(253, 3, 3)
 }
 
 .booked-seat{
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     background-image: url(../../assets/bookedseat.png);
     color: white;
     pointer-events: none  !important;
