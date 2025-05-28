@@ -239,10 +239,10 @@ const Busdetails = () => {
   };
 
   return (
-    <div className="border border-black flex justify-center">
+    <div className="flex justify-center  items-center">
       {conformpopup ? (
-        <div className="border border-red-500">
-          <h4>Confirm Booking?</h4>
+        <div className="bg-[#dddddd]  rounded-[4px] mt-[100px] py-[50px] px-[50px]">
+          <h4 className='flex justify-center items-center text-[30px]'>Confirm Booking?</h4>
           <div className="conform-book-buttons">
             <StripeCheckout
               billingAddress
@@ -257,7 +257,7 @@ const Busdetails = () => {
       ) : (
         <>
           <div className="max-w-[1200px] bg-[#ebebeb] flex">
-            <div className="border border-black w-[600px]">
+            <div className=" border-black w-[600px]">
               <div className="booknow-left">
                 <div className="booknow-left-busdetails">
                   <p className="bus-name">{bus.busname}</p>
