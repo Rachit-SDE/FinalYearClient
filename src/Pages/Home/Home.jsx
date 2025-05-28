@@ -7,10 +7,25 @@ import Blog from '../../Components/Blogs/Blogs'
 const Home = () => {
   return (
     <div>
-        <Header/>
-        <About/>
-        <Blog/>
-        <Footer/>
+      <div id="home">
+        <Header />
+        {/* Your content */}
+      </div>
+      
+      <div id="about">
+        <About />
+        {/* Your content */}
+      </div>
+
+      <div id="blog">
+        <Blog />
+        {/* Your content */}
+      </div>
+
+      <div id="contact">
+        <Footer />
+        {/* Your content */}
+      </div>
     </div>
   )
 }
