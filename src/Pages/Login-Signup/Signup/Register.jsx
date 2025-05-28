@@ -1,4 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
+import React from 'react'
 import { assets } from "../../../assets/assets";
 import { useState } from 'react';
 import './Register.css'
